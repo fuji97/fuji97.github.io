@@ -1,0 +1,38 @@
+.badge-large {
+    padding: 0.5em 1em;
+}
+
+.centered-medium {
+    @include media-breakpoint-down(md) {
+        text-align: center;
+    }
+
+    @include media-breakpoint-up(lg) {
+        text-align: left;
+    }
+}
+
+.icon-spaced {
+    margin: 0 0.2em;
+}
+
+.footer {
+    background-color: $primary;
+    text-align: center;
+    padding: 1.5rem 0;
+    color: whitesmoke;
+    position: absolute;
+    z-index: 1031;
+    left: 0;
+    right: 0;
+}
+
+
+.footer a {
+    font-weight: bold;
+    color: white;
+}
+
+.icon-bigger {
+    font-size: 1.5rem;
+}

@@ -1,0 +1,258 @@
+doctype html
+html(lang='it')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='')
+
+        title Federico Rapetti - Portfolio
+
+        link(rel='icon', type='image/x-icon', href='assets/img/favicon.ico')
+
+        // Font Awesome icons (free version)
+        script(src='https://use.fontawesome.com/releases/v5.13.0/js/all.js', crossorigin='anonymous')
+
+        // Google fonts
+        link(href='https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700', rel='stylesheet', type='text/css')
+        link(href='https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i', rel='stylesheet', type='text/css')
+
+        // Core theme CSS (includes Bootstrap)
+        link(href='css/styles.css', rel='stylesheet')
+
+    body#page-top
+
+        // Navigation
+        nav#sideNav.navbar.navbar-expand-lg.navbar-dark.bg-primary.fixed-top
+            a.navbar-brand.js-scroll-trigger(href='#page-top')
+                span.d-block.d-lg-none Federico Rapetti
+                span.d-none.d-lg-block
+                    img.img-fluid.img-profile.rounded-circle.mx-auto.mb-2(src='assets/img/profile.jpg', alt='Foto')
+            button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+                span.navbar-toggler-icon
+            #navbarSupportedContent.collapse.navbar-collapse
+                ul.navbar-nav
+                    li.nav-item
+                        a.nav-link.js-scroll-trigger(href='#about') About
+                    li.nav-item
+                        a.nav-link.js-scroll-trigger(href='#projects') Projects
+                    li.nav-item
+                        a.nav-link.js-scroll-trigger(href='#education') Education
+                    li.nav-item
+                        a.nav-link.js-scroll-trigger(href='#skills') Skills
+                    li.nav-item
+                        a.nav-link.js-scroll-trigger(href='#interests') Interests
+
+        // Page Content
+        .container-fluid.p-0
+
+            // About
+            section#about.resume-section
+                .resume-section-content
+                    .centered-medium
+                        img.img-fluid.mx-auto.mb-3(src="assets/img/logo.png", alt="Logo", width="150px" height="150px")
+                        h1.mb-0
+                            | Federico 
+                            |
+                            span.text-primary "fuji97"
+                            |
+                            | Rapetti
+                        .subheading.mb-5
+                            | Studente in Sicurezza Informatica, Full Stack e Game Developer - 
+                            a(href='mailto:fuji1097@gmail.com') fuji1097@gmail.com
+                    p.lead.mb-5
+                        | Laureato con 110 e Lode in Scienze Informatiche all'Università degli Studi del Piemonte Orientale, sono attualmente uno studente del corso di Laurea Magistrale in Sicurezza Informatica dell'Università degli Studi di Milano.
+                        br
+                        | Sviluppatore full stack, grafico per passione e Game Developer per 
+                        a(href="https://siderealworks.it/") Sidereal Works
+                        | .
+                    .social-icons
+                        a.social-icon(href='https://www.facebook.com/fuji1097')
+                            i.fab.fa-facebook-f
+                        a.social-icon(href='https://t.me/angolodifuji')
+                            i.fab.fa-telegram
+                        a.social-icon(href='https://www.linkedin.com/in/federico-rapetti/')
+                            i.fab.fa-linkedin-in
+                        a.social-icon(href='https://github.com/fuji97')
+                            i.fab.fa-github
+                        a.social-icon(href='https://twitter.com/1097fuji')
+                            i.fab.fa-twitter
+                        
+
+            hr.m-0
+
+            // Projects
+            section#projects.resume-section
+               .resume-section-content
+                    h2.mb-5 Progetti principali
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h3.mb-0 Cremisi Portals
+                            .subheading.mb-3 Sidereal Works
+                            p
+                                | Videogioco fan-made ispirato a Pokémon ed attualmente in sviluppo in Unity 3D.
+                        .flex-shrink-0
+                            a.social-icon.icon-spaced.icon-bigger(href='https://twitter.com/SiderealWorks')
+                                i.fab.fa-twitter
+                            a.social-icon.icon-spaced.icon-bigger(href='https://www.facebook.com/SiderealWorks')
+                                i.fab.fa-facebook-f
+                            a.social-icon.icon-spaced.icon-bigger(href='https://siderealworks.it/')
+                                i.fas.fa-home
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h3.mb-0 Telegram.Bot.Advanced
+                            p
+                                | Framework per lo sviluppo di bot Telegram in ASP.NET Core basato sul pacchetto Telegram.Bot.
+                        .flex-shrink-0
+                            a.social-icon.icon-spaced.icon-bigger(href='https://www.nuget.org/packages/Telegram.Bot.Advanced/')
+                                i.fas.fa-cubes
+                            a.social-icon.icon-spaced.icon-bigger(href='https://github.com/fuji97/Telegram.Bot.Advanced')
+                                i.fab.fa-github
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h3.mb-0 Chaldea Bot
+                            p
+                                | Bot Telegram per il tracking dei giocatori di Fate/Grand Order sviluppato in ASP.NET Core utilizzando il framework Telegram.Bot.Advanced.
+                        .flex-shrink-0
+                            a.social-icon.icon-spaced.icon-bigger(href='https://t.me/chaldeabot')
+                                i.fab.fa-telegram
+                            a.social-icon.icon-spaced.icon-bigger(href='https://github.com/fuji97/chaldea-user-bot')
+                                i.fab.fa-github
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between
+                        .flex-grow-1
+                            h3.mb-0 Ping
+                            p
+                                | Un Proof-of-Concept in PHP di un social network basato sulla posizione degli utenti.
+                        .flex-shrink-0
+                            a.social-icon.icon-spaced.icon-bigger(href='https://github.com/fuji97/Ping')
+                                i.fab.fa-github
+            hr.m-0
+
+            // Education
+            section#education.resume-section
+                .resume-section-content
+                    h2.mb-5 Titoli di studio
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h3.mb-0 Istituto di Istruzione Superiore - "CARAMUEL – RONCALLI"
+                            .subheading.mb-3 Diploma di Istituto Tecnico - Settore Tecnologico
+                            div Indirizzo “Informatica e Telecomunicazioni” - Articolazione “Informatica”
+                            p 
+                                b Voto: 
+                                | 100
+                        .flex-shrink-0
+                            span.text-primary 2010 - 2016
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h3.mb-0 Università del Piemonte Orientale
+                            .subheading.mb-3 Laurea in Informatica
+                            p 
+                                b Voto:
+                                | 110 e Lode
+                                br
+                                b Tesi:
+                                | Home Insurance: Un applicazione web per poter accedere a tutte le polizze da casa
+                        .flex-shrink-0
+                            span.text-primary August 2016 - Ottobre 2019
+                
+                    .d-flex.flex-column.flex-md-row.justify-content-between
+                        .flex-grow-1
+                            h3.mb-0 Università degli Studi di Milano
+                            .subheading.mb-3 Laurea Magistrale in Sicurezza Informatica
+                            p Laureando
+                        .flex-shrink-0
+                            span.text-primary 2019 - Ora
+
+            hr.m-0
+
+            // Skills
+            section#skills.resume-section
+                .resume-section-content
+                    h2.mb-5 Competenze tecinche
+                    .subheading Linguaggi di programmazione
+                    .badge.badge-secondary.badge-pill.badge-large C#
+                    .badge.badge-secondary.badge-pill.badge-large ASP.NET Core
+                    .badge.badge-secondary.badge-pill.badge-large Entity Framework Core
+                    .badge.badge-secondary.badge-pill.badge-large.mb-1 Java
+                    br
+                    .badge.badge-secondary.badge-pill.badge-large ASP.NET Core
+                    .badge.badge-secondary.badge-pill.badge-large Python
+                    .badge.badge-secondary.badge-pill.badge-large HTML5
+                    .badge.badge-secondary.badge-pill.badge-large CSS3
+                    .badge.badge-secondary.badge-pill.badge-large.mb-3 JavaScript
+                    .subheading Tools
+                    .badge.badge-secondary.badge-pill.badge-large GitHub
+                    .badge.badge-secondary.badge-pill.badge-large GitHub Actions
+                    .badge.badge-secondary.badge-pill.badge-large Docker
+                    .badge.badge-secondary.badge-pill.badge-large.mb-3 Linux
+                    .subheading.mb-3 Workflow
+                    ul.fa-ul.mb-0
+                        li
+                            span.fa-li
+                                i.fas.fa-check
+                            | Test Driven Development
+                        li
+                            span.fa-li
+                                i.fas.fa-check
+                            | Git & Continuous Integration/Delivery
+                        li
+                            span.fa-li
+                                i.fas.fa-check
+                            | Agile Development
+
+            hr.m-0
+
+            // Interests
+            section#interests.resume-section
+                .resume-section-content
+                    h2.mb-5 Interessi e storia
+                    p
+                        | Una delle mie passioni principali sono i videogiochi, sono in questo mondo sin da piccolo e ho sviluppato nel tempo l'interesse di svilupparli.
+                    p
+                        | Ho iniziato come "hacker" nel mondo di Pokémon sul forum 
+                        a(href="https://pokemonhacking.it") PokemonHacking.it
+                        | , con le cosiddette "Hack ROM", versioni modificate dei giochi principali per includere nuovi Pokémon, mappe, storie e meccaniche di gioco.
+                    p
+                        | Col tempo ho conosciuto diverse persone con cui successivamente fondammo l'Hoseki Team, un team a supporto del progetto
+                        i Pokémon Cremisi Portals
+                        | , un gioco fan-made basato su Pokémon Essentials, un toolkit per creare giochi Pokémon-like su RPG Maker XP.
+                    p
+                        | Successivamente, a causa del rinnovato interesse per il progetto ed un sostanziale cambio di membri del team, si è deciso di rimuovere completamente tutti i riferimenti a Pokémon ed avviare un progetto da 0 su Unity 3D sotto il nome di 
+                        i Sidereal Works
+                        | .
+                    p
+                        | Oltre ai videogiochi sono un grande fruitorie di serie animate principalmente giapponesi (vi lascio il link al mio 
+                        a(href="https://myanimelist.net/animelist/fuji97") MyAnimeList
+                        | ) e un appassionato di tecnologia, in particolare l'automazione.
+
+            hr.m-0
+
+            // Footer
+        section
+            .footer
+                | Based on the free theme 
+                a(href="https://startbootstrap.com/themes/resume") Resume
+                |
+                | from 
+                a(href="https://startbootstrap.com/") Start Bootstrap
+                |
+                | - Hosted on 
+                a(href="https://pages.github.com/") GitHub Pages
+
+        // Bootstrap core JS
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+        script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js')
+
+        // Third party plugin JS
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js')
+
+        // Core theme JS
+        script(src='js/scripts.js')
