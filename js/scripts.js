@@ -1,6 +1,6 @@
 /*!
     * Start Bootstrap - Fuji's Portfolio v1.0.0 (https://github.com/fuji97/fuji97.github.io)
-    * Copyright 2013-2020 fuji97
+    * Copyright 2013-2021 fuji97
     * Licensed under MIT (https://github.com/StartBootstrap/fuji-portfolio/blob/master/LICENSE)
     */
     (function ($) {
