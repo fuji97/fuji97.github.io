@@ -12,8 +12,10 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Install and Build 🔧
+      - name: Install Bun 📥
         uses: oven-sh/setup-bun@v1
+
+      - name: Build 🔧
         run: |
           bun install --production
           bun run build
